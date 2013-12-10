@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+root = File.expand_path('../..', __FILE__)
+$LOAD_PATH.unshift root
+$LOAD_PATH.unshift File.join(root, 'lib')
+
+require 'gh-pub_keys'
+require 'optparse'
+
+def banner
+  b = "Usage: gh-pub_keys [github username]"
+  STDERR.puts b
+end
+
+if !ARGV[0] || ARGV[0] == "-h" || ARGV[0] == "--help"
+  banner
+else
+  GhPubKeys.get(ARGV[0]).each do |key|
+    STDOUT.puts key
+  end
+end

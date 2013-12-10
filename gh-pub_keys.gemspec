@@ -5,12 +5,12 @@ require 'gh/pub_keys/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "gh-pub_keys"
-  spec.version       = Gh::PubKeys::VERSION
+  spec.version       = GhPubKeys::VERSION
   spec.authors       = ["Takatoshi Matsumoto"]
   spec.email         = ["toqoz403@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{This gem enable to treat github.com/<user>.keys programmatically.}
+  spec.summary       = %q{Get pub keys from github. And return as Array.}
+  spec.homepage      = "http://github.com/ToQoz/gh-pub_keys"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

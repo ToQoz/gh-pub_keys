@@ -1,24 +1,47 @@
-# Gh::PubKeys
-
-TODO: Write a gem description
+# GhPubKeys
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'gh-pub_keys'
+```
+gem 'gh-pub_keys'
+```
 
 And then execute:
 
-    $ bundle
+```
+$ bundle
+```
 
 Or install it yourself as:
 
-    $ gem install gh-pub_keys
+```
+$ gem install gh-pub_keys
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+### Use from ruby
+
+```ruby
+require 'gh-pub_keys'
+
+GhPubKeys.get("ToQoz").each do |key|
+  // ...
+end
+```
+
+### Use from commandline
+
+```
+$ gh-pub_keys ToQoz
+ssh-key1
+ssh-key2
+.
+.
+.
+```
 
 ## Contributing
 
