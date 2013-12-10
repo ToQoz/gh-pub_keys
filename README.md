@@ -1,5 +1,9 @@
 # GhPubKeys
 
+## Use case
+
+Get team members pub keys by using this in Chef recipe or other ruby script.
+
 ## Installation
 
 Add this line to your application's Gemfile:
