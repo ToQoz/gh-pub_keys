@@ -1,7 +1,7 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'gh/pub_keys/version'
+require 'gh-pub_keys/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "gh-pub_keys"
