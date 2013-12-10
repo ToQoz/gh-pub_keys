@@ -32,7 +32,7 @@ $ gem install gh-pub_keys
 require 'gh-pub_keys'
 
 GhPubKeys.get("ToQoz").each do |key|
-  // ...
+  # ...
 end
 ```
 
